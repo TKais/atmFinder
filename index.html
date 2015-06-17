@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title> Chase ATM Finder</title>
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC62_MIiukFpq6wtJTG9UjU2oFFBTAnvho"></script>
+<script src='handlebars.js'></script>
+<script src="app.js"></script>
+
+</head>
+
+<body>
+
+<script id="popupContent" type="text/x-handlebars-template">
+    <div class="float: left";>
+      <h3>{{label}}</h3><br />
+      <b>Address:</b> {{address}}<br />
+      <b>City:</b> {{city}}<br />
+      <b>State, Zip</b>{{state}} {{zip}}<br/>
+      <b>Phone:</b>{{phone}}<br />
+      <b>ATMs:</b> {{atms}}</div>
+    <b>Hours:</b> <div>{{#if openinghours}}
+      {{{openinghours}}}
+    {{else}}
+      N/A
+    {{/if}}</div>
+</script>
+
+<div id="container">
+
+<img src='/images/Chase.png' alt='Chase' id = "chase">
+
+<div id="map-canvas"></div>
+
+</div>
+
+</body>
+
+</html>
