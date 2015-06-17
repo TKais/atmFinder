@@ -29,6 +29,9 @@
 
 #Resources#
 [handlebars docs](http://handlebarsjs.com/)
+
 [Stack Overflow](http://stackoverflow.com/)
+
 [Google](https://www.google.com/)
+
 [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
